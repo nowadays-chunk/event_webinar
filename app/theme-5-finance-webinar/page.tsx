@@ -1,10 +1,10 @@
-import { Event, SeatInfo, RegistrationStep } from '../../types';
-import { HeroSection } from '../../components/hero-section';
-import { StickyCta } from '../../components/sticky-cta';
-import { SeatIndicator } from '../../components/seat-indicator';
-import { RegistrationForm } from '../../components/registration-form';
-import { ScarcityBadge } from '../../components/scarcity-badge';
-import { Countdown } from '../../components/countdown';
+import { Event, SeatInfo, RegistrationStep } from '@/app/types';
+import { HeroSection } from '@/app/components/hero-section';
+import { StickyCta } from '@/app/components/sticky-cta';
+import { SeatIndicator } from '@/app/components/seat-indicator';
+import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';
+import { ScarcityBadge } from '@/app/components/scarcity-badge';
+import { Countdown } from '@/app/components/countdown';
 
 const event: Event = {
     id: '5',
@@ -148,9 +148,8 @@ export default function FinanceWebinarPage() {
                     <p className="text-xl text-center text-gray-400 mb-12">
                         30-Day Money-Back Guarantee
                     </p>
-                    <RegistrationForm
+                    <RegistrationWrapper
                         steps={registrationSteps}
-                        onSubmit={(data) => console.log('Registration:', data)}
                     />
                 </div>
             </section>

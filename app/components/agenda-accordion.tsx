@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { AgendaItem } from '../types';
-import { SpeakerCard } from './speaker-card';
+import { AgendaItem } from '@/app/types';
+import { SpeakerCard } from '@/app/components/speaker-card';
 
 interface AgendaAccordionProps {
     agenda: AgendaItem[];

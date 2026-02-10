@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { RegistrationStep } from '../types';
+import { RegistrationStep } from '@/app/types';
 
 interface RegistrationFormProps {
     steps: RegistrationStep[];
@@ -71,10 +71,10 @@ export function RegistrationForm({ steps, onSubmit, className = '' }: Registrati
                     >
                         <div
                             className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all ${index === currentStep
-                                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white scale-110'
-                                    : index < currentStep
-                                        ? 'bg-green-500 text-white'
-                                        : 'bg-gray-700 text-gray-400'
+                                ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white scale-110'
+                                : index < currentStep
+                                    ? 'bg-green-500 text-white'
+                                    : 'bg-gray-700 text-gray-400'
                                 }`}
                         >
                             {index < currentStep ? '✓' : index + 1}

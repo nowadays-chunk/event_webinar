@@ -1,7 +1,7 @@
 'use client';
 
-import { HeroVariant, Event } from '../types';
-import { Countdown } from './countdown';
+import { HeroVariant, Event } from '@/app/types';
+import { Countdown } from '@/app/components/countdown';
 
 interface HeroSectionProps {
     event: Event;

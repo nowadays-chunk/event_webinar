@@ -1,8 +1,8 @@
-import { Event, SeatInfo, RegistrationStep } from '../../types';
-import { StickyCta } from '../../components/sticky-cta';
-import { SeatIndicator } from '../../components/seat-indicator';
-import { RegistrationForm } from '../../components/registration-form';
-import { Countdown } from '../../components/countdown';
+import { Event, SeatInfo, RegistrationStep } from '@/app/types';
+import { StickyCta } from '@/app/components/sticky-cta';
+import { SeatIndicator } from '@/app/components/seat-indicator';
+import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';
+import { Countdown } from '@/app/components/countdown';
 
 const event: Event = {
     id: '7',
@@ -153,9 +153,8 @@ export default function DeveloperConferencePage() {
                     <h2 className="text-4xl md:text-6xl font-black text-center mb-12 text-green-400">
                         {'>'} register()
                     </h2>
-                    <RegistrationForm
+                    <RegistrationWrapper
                         steps={registrationSteps}
-                        onSubmit={(data) => console.log('Registration:', data)}
                     />
                 </div>
             </section>

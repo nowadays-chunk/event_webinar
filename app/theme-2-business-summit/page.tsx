@@ -1,13 +1,13 @@
-import { Event, Speaker, AgendaItem, RegistrationStep, SeatInfo } from '../../types';
-import { HeroSection } from '../../components/hero-section';
-import { StickyCta } from '../../components/sticky-cta';
-import { SeatIndicator } from '../../components/seat-indicator';
-import { SpeakerCard } from '../../components/speaker-card';
-import { AgendaAccordion } from '../../components/agenda-accordion';
-import { RegistrationForm } from '../../components/registration-form';
-import { ScarcityBadge } from '../../components/scarcity-badge';
-import { SocialProof } from '../../components/social-proof';
-import { Countdown } from '../../components/countdown';
+import { Event, Speaker, AgendaItem, RegistrationStep, SeatInfo } from '@/app/types';
+import { HeroSection } from '@/app/components/hero-section';
+import { StickyCta } from '@/app/components/sticky-cta';
+import { SeatIndicator } from '@/app/components/seat-indicator';
+import { SpeakerCard } from '@/app/components/speaker-card';
+import { AgendaAccordion } from '@/app/components/agenda-accordion';
+import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';
+import { ScarcityBadge } from '@/app/components/scarcity-badge';
+import { SocialProof } from '@/app/components/social-proof';
+import { Countdown } from '@/app/components/countdown';
 
 const event: Event = {
     id: '2',
@@ -158,9 +158,8 @@ export default function BusinessSummitPage() {
                         Investment: <span className="line-through text-gray-500">${event.price}</span>{' '}
                         <span className="text-green-400 font-bold">{event.earlyBirdPrice}</span> (Early Bird)
                     </p>
-                    <RegistrationForm
+                    <RegistrationWrapper
                         steps={registrationSteps}
-                        onSubmit={(data) => console.log('Registration:', data)}
                     />
                 </div>
             </section>

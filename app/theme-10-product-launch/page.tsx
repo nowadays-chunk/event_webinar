@@ -1,9 +1,9 @@
-import { Event, SeatInfo, RegistrationStep } from '../../types';
-import { StickyCta } from '../../components/sticky-cta';
-import { SeatIndicator } from '../../components/seat-indicator';
-import { RegistrationForm } from '../../components/registration-form';
-import { ScarcityBadge } from '../../components/scarcity-badge';
-import { Countdown } from '../../components/countdown';
+import { Event, SeatInfo, RegistrationStep } from '@/app/types';
+import { StickyCta } from '@/app/components/sticky-cta';
+import { SeatIndicator } from '@/app/components/seat-indicator';
+import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';
+import { ScarcityBadge } from '@/app/components/scarcity-badge';
+import { Countdown } from '@/app/components/countdown';
 
 const event: Event = {
     id: '10',
@@ -185,9 +185,8 @@ export default function ProductLaunchPage() {
                     <p className="text-xl text-center text-pink-400 mb-12 font-bold">
                         🎁 First 100 registrants get exclusive founder perks
                     </p>
-                    <RegistrationForm
+                    <RegistrationWrapper
                         steps={registrationSteps}
-                        onSubmit={(data) => console.log('Registration:', data)}
                     />
                 </div>
             </section>

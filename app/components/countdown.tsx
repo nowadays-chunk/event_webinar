@@ -1,7 +1,7 @@
 'use client';
 
-import { useCountdown } from '../hooks/use-countdown';
-import { CountdownVariant } from '../types';
+import { useCountdown } from '@/app/hooks/use-countdown';
+import { CountdownVariant } from '@/app/types';
 
 interface CountdownProps {
     targetDate: string;

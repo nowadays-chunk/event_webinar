@@ -1,6 +1,6 @@
 'use client';
 
-import { Speaker } from '../types';
+import { Speaker } from '@/app/types';
 
 interface SpeakerCardProps {
     speaker: Speaker;

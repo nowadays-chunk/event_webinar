@@ -1,6 +1,6 @@
 'use client';
 
-import { SeatInfo } from '../types';
+import { SeatInfo } from '@/app/types';
 
 interface SeatIndicatorProps {
     seatInfo: SeatInfo;

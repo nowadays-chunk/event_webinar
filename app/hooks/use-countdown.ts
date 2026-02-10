@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { CountdownTime } from '../types';
+import { CountdownTime } from '@/app/types';
 
 export function useCountdown(targetDate: string): CountdownTime {
     const [countdown, setCountdown] = useState<CountdownTime>({

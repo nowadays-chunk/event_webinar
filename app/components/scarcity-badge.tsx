@@ -1,6 +1,6 @@
 'use client';
 
-import { UrgencyLevel } from '../types';
+import { UrgencyLevel } from '@/app/types';
 
 interface ScarcityBadgeProps {
     message: string;

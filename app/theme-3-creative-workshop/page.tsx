@@ -1,10 +1,10 @@
-import { Event, Speaker, SeatInfo, RegistrationStep } from '../../types';
-import { HeroSection } from '../../components/hero-section';
-import { StickyCta } from '../../components/sticky-cta';
-import { SeatIndicator } from '../../components/seat-indicator';
-import { SpeakerCard } from '../../components/speaker-card';
-import { RegistrationForm } from '../../components/registration-form';
-import { ScarcityBadge } from '../../components/scarcity-badge';
+import { Event, Speaker, SeatInfo, RegistrationStep } from '@/app/types';
+import { HeroSection } from '@/app/components/hero-section';
+import { StickyCta } from '@/app/components/sticky-cta';
+import { SeatIndicator } from '@/app/components/seat-indicator';
+import { SpeakerCard } from '@/app/components/speaker-card';
+import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';
+import { ScarcityBadge } from '@/app/components/scarcity-badge';
 
 const event: Event = {
     id: '3',
@@ -120,9 +120,8 @@ export default function CreativeWorkshopPage() {
                     <p className="text-xl text-center text-white/80 mb-12">
                         Transform your creative practice
                     </p>
-                    <RegistrationForm
+                    <RegistrationWrapper
                         steps={registrationSteps}
-                        onSubmit={(data) => console.log('Registration:', data)}
                     />
                 </div>
             </section>

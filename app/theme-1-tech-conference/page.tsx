@@ -1,13 +1,13 @@
-import { Event, Speaker, AgendaItem, RegistrationStep, SeatInfo } from '../../types';
-import { HeroSection } from '../../components/hero-section';
-import { Countdown } from '../../components/countdown';
-import { StickyCta } from '../../components/sticky-cta';
-import { SeatIndicator } from '../../components/seat-indicator';
-import { SpeakerCard } from '../../components/speaker-card';
-import { AgendaAccordion } from '../../components/agenda-accordion';
-import { RegistrationForm } from '../../components/registration-form';
-import { ScarcityBadge } from '../../components/scarcity-badge';
-import { SocialProof } from '../../components/social-proof';
+import { Event, Speaker, AgendaItem, RegistrationStep, SeatInfo } from '@/app/types';
+import { HeroSection } from '@/app/components/hero-section';
+import { Countdown } from '@/app/components/countdown';
+import { StickyCta } from '@/app/components/sticky-cta';
+import { SeatIndicator } from '@/app/components/seat-indicator';
+import { SpeakerCard } from '@/app/components/speaker-card';
+import { AgendaAccordion } from '@/app/components/agenda-accordion';
+import { ScarcityBadge } from '@/app/components/scarcity-badge';
+import { SocialProof } from '@/app/components/social-proof';
+import { RegistrationSection } from './RegistrationSection';
 
 const event: Event = {
     id: '1',
@@ -162,20 +162,8 @@ export default function TechConferencePage() {
             </section>
 
             {/* Registration */}
-            <section className="py-20 px-4 bg-black">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-black text-center mb-4 text-gradient-purple">
-                        Secure Your Spot
-                    </h2>
-                    <p className="text-xl text-center text-gray-400 mb-12">
-                        Only {seatInfo.remainingSeats} seats remaining!
-                    </p>
-                    <RegistrationForm
-                        steps={registrationSteps}
-                        onSubmit={(data) => console.log('Registration:', data)}
-                    />
-                </div>
-            </section>
+            {/* Registration */}
+            <RegistrationSection seatInfo={seatInfo} steps={registrationSteps} />
         </div>
     );
 }

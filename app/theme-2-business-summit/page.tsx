@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import { Event, Speaker, AgendaItem, RegistrationStep, SeatInfo } from '@/app/types';
+export const metadata: Metadata = {
+    title: "Elite Business Summit - Strategic Growth 2024",
+    description: "Connect with industry leaders and master the art of strategic business growth. The definitive event for modern entrepreneurs.",
+    keywords: ["business summit", "strategic growth", "leadership conference", "entrepreneurship", "business networking"],
+};
 import { HeroSection } from '@/app/components/hero-section';
 import { StickyCta } from '@/app/components/sticky-cta';
 import { SeatIndicator } from '@/app/components/seat-indicator';

@@ -1,4 +1,11 @@
 import { Event, SeatInfo, RegistrationStep } from '@/app/types';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Sonic Waves - Immersive Virtual Concert Experience",
+    description: "Experience the future of live music. Join us for a breathtaking virtual concert featuring world-class artists and immersive visuals.",
+    keywords: ["virtual concert", "live music", "immersive event", "digital concert", "music performance"],
+};
 import { HeroSection } from '@/app/components/hero-section';
 import { StickyCta } from '@/app/components/sticky-cta';
 import { SeatIndicator } from '@/app/components/seat-indicator';

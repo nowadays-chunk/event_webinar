@@ -1,4 +1,11 @@
 import { Event, Speaker, SeatInfo, RegistrationStep } from '@/app/types';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Creative Mastery - Hands-On Design Workshop",
+    description: "Unleash your creative potential. Join our hands-on workshops led by world-class designers and artists.",
+    keywords: ["design workshop", "creative mastery", "art workshop", "hands-on learning", "design skills"],
+};
 import { HeroSection } from '@/app/components/hero-section';
 import { StickyCta } from '@/app/components/sticky-cta';
 import { SeatIndicator } from '@/app/components/seat-indicator';

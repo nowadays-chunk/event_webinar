@@ -1,4 +1,11 @@
 import { Event, SeatInfo, RegistrationStep } from '@/app/types';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "DevForge - Next-Gen Software Architecture",
+    description: "By developers, for developers. Explore the cutting edge of software architecture, cloud computing, and DevOps.",
+    keywords: ["developer conference", "software architecture", "DevOps", "cloud computing", "coding event"],
+};
 import { StickyCta } from '@/app/components/sticky-cta';
 import { SeatIndicator } from '@/app/components/seat-indicator';
 import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';

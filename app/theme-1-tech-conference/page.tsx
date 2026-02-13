@@ -1,4 +1,11 @@
 import { Event, Speaker, AgendaItem, RegistrationStep, SeatInfo } from '@/app/types';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Global Tech Summit - Future of Innovation",
+    description: "Join the world's leading tech minds for an immersive exploration of the future. Innovation starts here.",
+    keywords: ["tech conference", "innovation summit", "technology event", "global tech", "tech speakers"],
+};
 import { HeroSection } from '@/app/components/hero-section';
 import { Countdown } from '@/app/components/countdown';
 import { StickyCta } from '@/app/components/sticky-cta';

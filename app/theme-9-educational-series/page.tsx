@@ -1,4 +1,11 @@
 import { Event, Speaker, AgendaItem, SeatInfo, RegistrationStep } from '@/app/types';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Lifelong Learning - Advanced Educational Series",
+    description: "Expand your horizons. Join our comprehensive educational series covering the most critical skills for the modern world.",
+    keywords: ["educational series", "online learning", "skill development", "lifelong learning", "education event"],
+};
 import { HeroSection } from '@/app/components/hero-section';
 import { StickyCta } from '@/app/components/sticky-cta';
 import { SeatIndicator } from '@/app/components/seat-indicator';

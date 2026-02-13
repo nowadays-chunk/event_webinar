@@ -1,4 +1,11 @@
 import { Event, SeatInfo, RegistrationStep } from '@/app/types';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Visionary Launch - The Future of Product Innovation",
+    description: "Be the first to witness the future. Join us for the official unveiling of our most revolutionary product yet.",
+    keywords: ["product launch", "innovation", "tech unveiling", "product event", "visionary launch"],
+};
 import { StickyCta } from '@/app/components/sticky-cta';
 import { SeatIndicator } from '@/app/components/seat-indicator';
 import { RegistrationWrapper } from '@/app/components/RegistrationWrapper';
